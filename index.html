@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandra Sekhar Mahapatra | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">CS<span>M</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <div class="hero-image">
+          <img src="images/profile_phto.jpeg" alt="Chandra Sekhar Mahapatra" id="heroImg" onerror="this.style.display='none';this.parentElement.querySelector('.fallback-icon').style.display='flex';" />
+          <i class="fas fa-user fallback-icon" style="display:none;"></i>
+        </div>
+      </div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Chandra Sekhar <span>Mahapatra</span></h1>
+      <p class="hero-tagline">Aspiring Web Developer &amp; Computer Science Student</p>
+            <div class="hero-buttons">
+        <a href="resume.pdf" target="_blank" class="btn btn-resume"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:chandrasekhar@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title" data-animate>About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image" data-animate>
+          <div class="about-img-wrapper">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        <div class="about-text" data-animate>
+          <h3>A Passionate Web Developer &amp; CS Student</h3>
+          <p>
+            Hi! I'm <strong>Chandra Sekhar Mahapatra</strong>, a B.Tech Computer Science student from
+            <strong>Odisha, India</strong>. I'm passionate about technology, web development, and
+            continuous learning. I love building clean, responsive, and user-friendly websites that
+            make a real impact.
+          </p>
+          <p>
+            My journey in tech started with curiosity — exploring how the web works, writing my first
+            lines of HTML, and gradually diving into JavaScript frameworks and modern development
+            tools. I believe in learning by doing and am always eager to take on new challenges.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-value">Chandra Sekhar Mahapatra</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Odisha, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Tech - Computer Science</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Focus</span>
+              <span class="info-value">Web Development</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-download"></i> Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4>HTML</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+          <h4>Bootstrap</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h4>React</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <h4>Java</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>C</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>C++</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <h4>Git</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-card" data-animate>
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card" data-animate>
+          <div class="project-image">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio Website</h3>
+            <p>A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and a clean design.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-animate>
+          <div class="project-image">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <div class="project-content">
+            <h3>NGO Awareness Webpage</h3>
+            <p>An informative webpage designed to raise awareness about an NGO, showcasing their mission, activities, and ways to contribute to the cause.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Education</span></h2>
+      <div class="education-timeline">
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 – 2027</span>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="timeline-institution"><i class="fas fa-university"></i> Vikash Institute of Technology, Bargarh</p>
+            <p class="timeline-detail"><i class="fas fa-landmark"></i> Biju Patnaik University of Technology (BPUT)</p>
+            <span class="timeline-badge">4th Year</span>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>Higher Secondary (Class XII)</h3>
+            <p class="timeline-institution"><i class="fas fa-school"></i> Vedic International School, Sambalpur</p>
+            <p class="timeline-detail"><i class="fas fa-clipboard-list"></i> CBSE Board</p>
+            <span class="timeline-badge"><i class="fas fa-chart-line"></i> 80%</span>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h3>Secondary (Class X)</h3>
+            <p class="timeline-institution"><i class="fas fa-school"></i> Vikash Residential School, Bargarh</p>
+            <p class="timeline-detail"><i class="fas fa-clipboard-list"></i> CBSE Board</p>
+            <span class="timeline-badge"><i class="fas fa-chart-line"></i> 80%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2 class="section-title" data-animate>Certifications &amp; <span>Achievements</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card" data-animate>
+          <div class="cert-img-wrapper">
+            <img src="images/certificate1.jpeg" alt="Certificate 1" onclick="openCertModal(this.src)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-seal"><i class="fas fa-award"></i></div>
+            <p class="cert-title-display">HTML and CSS: Building a Single-Page Website</p>
+            <p class="cert-issuer-display"><i class="fas fa-building"></i> Coursera</p>
+            <p class="cert-date-display"><i class="fas fa-calendar-alt"></i> January 2025</p>
+            <a href="images/certificate1.jpeg" download class="btn-download"><i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-img-wrapper">
+            <img src="images/certificate2.jpeg" alt="Certificate 2" onclick="openCertModal(this.src)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-seal"><i class="fas fa-award"></i></div>
+            <p class="cert-title-display">The Raspberry Pi Platform and Python Programming for the Raspberry Pi</p>
+            <p class="cert-issuer-display"><i class="fas fa-building"></i> University of California, Irvine (Coursera)</p>
+            <p class="cert-date-display"><i class="fas fa-calendar-alt"></i> January 2025</p>
+            <a href="images/certificate2.jpeg" download class="btn-download"><i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-img-wrapper">
+            <img src="images/certificate3.jpeg" alt="Certificate 3" onclick="openCertModal(this.src)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-seal"><i class="fas fa-award"></i></div>
+            <p class="cert-title-display">Introduction to the Internet of Things and Embedded Systems</p>
+            <p class="cert-issuer-display"><i class="fas fa-building"></i> University of California, Irvine (Coursera)</p>
+            <p class="cert-date-display"><i class="fas fa-calendar-alt"></i> January 2025</p>
+            <a href="images/certificate3.jpeg" download class="btn-download"><i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+        <div class="cert-card" data-animate>
+          <div class="cert-img-wrapper">
+            <img src="images/certificate4.jpeg" alt="Certificate 4" onclick="openCertModal(this.src)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="cert-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-seal"><i class="fas fa-award"></i></div>
+            <p class="cert-title-display">The Arduino Platform and C Programming</p>
+            <p class="cert-issuer-display"><i class="fas fa-building"></i> University of California, Irvine (Coursera)</p>
+            <p class="cert-date-display"><i class="fas fa-calendar-alt"></i> January 2025</p>
+            <a href="images/certificate4.jpeg" download class="btn-download"><i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-animate>Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate>
+          <h3>Let's Connect</h3>
+          <p>Feel free to reach out for collaborations, opportunities, or just a friendly chat!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:sekharmahapatra7@gmail.com">sekharmahapatra7@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/sekharmahapatra/" target="_blank" rel="noopener">linkedin.com/in/sekharmahapatra-b39298364</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/sekharmahapatra" target="_blank" rel="noopener">github.com/SekharMahapatra77</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+917978057597">+91 7978057597</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/917978057597" target="_blank" rel="noopener">+91 7978057597</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" data-animate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">CS<span>M</span></a>
+        <p>&copy; 2026 Chandra Sekhar Mahapatra | All Rights Reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:chandrasekhar@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal -->
+  <div class="cert-modal" id="certModal" onclick="closeCertModal(event)">
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" onclick="closeCertModal(event)" aria-label="Close"><i class="fas fa-times"></i></button>
+      <img id="certModalImg" src="" alt="Certificate Full View" />
+      <a id="certModalDownload" href="" download class="btn-download-modal"><i class="fas fa-download"></i> Download Certificate</a>
+    </div>
+  </div>
+  
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
