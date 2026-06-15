@@ -42,7 +42,7 @@
       <h1 class="hero-name">Chandra Sekhar <span>Mahapatra</span></h1>
       <p class="hero-tagline">Aspiring Web Developer &amp; Computer Science Student</p>
             <div class="hero-buttons">
-        <a href="resume.pdf" target="_blank" class="btn btn-resume"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="javascript:void(0)" onclick="openResumeModal()" class="btn btn-resume"><i class="fas fa-file-alt"></i> Resume</a>
         <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
       </div>
       <div class="hero-socials">
@@ -393,6 +393,15 @@
       <button class="cert-modal-close" onclick="closeCertModal(event)" aria-label="Close"><i class="fas fa-times"></i></button>
       <img id="certModalImg" src="" alt="Certificate Full View" />
       <a id="certModalDownload" href="" download class="btn-download-modal"><i class="fas fa-download"></i> Download Certificate</a>
+    </div>
+  </div>
+
+  <!-- Resume Modal -->
+  <div class="cert-modal" id="resumeModal" onclick="closeResumeModal(event)">
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" onclick="closeResumeModal(event)" aria-label="Close"><i class="fas fa-times"></i></button>
+      <img id="resumeModalImg" src="images/My_Resume image.jpeg" alt="My Resume" />
+      <a href="images/My_Resume image.jpeg" download class="btn-download-modal"><i class="fas fa-download"></i> Download Resume</a>
     </div>
   </div>
   

@@ -188,10 +188,27 @@ function closeCertModal(event) {
   }
 }
 
+/* ========== Resume Modal ========== */
+function openResumeModal() {
+  const modal = document.getElementById('resumeModal');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeResumeModal(event) {
+  const modal = document.getElementById('resumeModal');
+  if (event.target === modal || event.target.closest('.cert-modal-close')) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    const modal = document.getElementById('certModal');
-    modal.classList.remove('active');
+    const certModal = document.getElementById('certModal');
+    const resumeModal = document.getElementById('resumeModal');
+    certModal.classList.remove('active');
+    resumeModal.classList.remove('active');
     document.body.style.overflow = '';
   }
 });
